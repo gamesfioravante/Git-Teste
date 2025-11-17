@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Importância de Criar um Site</title>
+  <!-- Certifique-se que o arquivo chama-se exatamente style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Criar um Site — Por que é tão importante?</h1>
+      <button id="menu-toggle" class="menu-btn" aria-label="Abrir menu">☰ Menu</button>
+    </div>
+  </header>
+
+  <aside id="side-menu" class="side-menu">
+    <div class="side-top">
+      <h2>Menu</h2>
+      <button id="close-menu" class="close-btn" aria-label="Fechar menu">✕</button>
+    </div>
+    <ul>
+      <li><a href="#" data-target="introducao">Introdução</a></li>
+      <li><a href="#" data-target="beneficios">Benefícios</a></li>
+      <li><a href="#" data-target="recursos">Recursos Exclusivos</a></li>
+      <li><a href="#" data-target="contato">Contato</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <section id="introducao" class="secao ativa">
+      <h2>Por que criar um site?</h2>
+      <p>Criar um site é essencial para qualquer projeto moderno. Ele dá visibilidade, profissionalismo e abre portas no ambiente digital.</p>
+      <img alt="banner" class="banner" src="https://source.unsplash.com/1200x400/?website,design">
+    </section>
+
+    <section id="beneficios" class="secao">
+      <h2>Benefícios de ter um site</h2>
+      <ul class="benef-list">
+        <li>✔︎ Fortalece a identidade digital</li>
+        <li>✔︎ Aumenta credibilidade</li>
+        <li>✔︎ Permite vender 24h por dia</li>
+        <li>✔︎ Facilita comunicação com clientes</li>
+      </ul>
+    </section>
+
+    <section id="recursos" class="secao">
+      <h2>Conteúdos Exclusivos</h2>
+
+      <div class="filtro-area">
+        <label for="filtro">Filtrar por categoria:</label>
+        <select id="filtro">
+          <option value="todos">Todos</option>
+          <option value="design">Design</option>
+          <option value="negocios">Negócios</option>
+          <option value="tecnologia">Tecnologia</option>
+        </select>
+      </div>
+
+      <div id="cards-container" class="cards">
+        <article class="card" data-cat="design">
+          <h3>Design Moderno</h3>
+          <p>Como um site bem projetado pode influenciar o usuário.</p>
+        </article>
+
+        <article class="card" data-cat="negocios">
+          <h3>Crescimento de Negócios</h3>
+          <p>Um site profissional aumenta vendas e conversões.</p>
+        </article>
+
+        <article class="card" data-cat="tecnologia">
+          <h3>Tecnologia Web</h3>
+          <p>As tecnologias que tornam sites mais rápidos e seguros.</p>
+        </article>
+
+        <article class="card" data-cat="design">
+          <h3>Identidade Visual</h3>
+          <p>Por que a aparência do site importa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="secao">
+      <h2>Entre em Contato</h2>
+      <form class="form" onsubmit="event.preventDefault(); alert('Mensagem enviada (teste)');">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
